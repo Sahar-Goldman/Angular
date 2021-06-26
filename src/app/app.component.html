@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    <h1>Calculator</h1>
+    <label>a:</label>
+    <input #first type="number">
+
+    <label>b:</label>
+    <input #second type="number">
+    
+    <button (click)="calc(first.valueAsNumber,second.valueAsNumber)">Calc</button>
+
+    <hr>
+
+    <ul>
+        <li>{{a}} + {{b}} = {{sum}}</li>
+        <li>{{a}} - {{b}} = {{diff}}</li>
+        <li>{{a}} * {{b}} = {{mult}}</li>
+    </ul>
+
+</html>
